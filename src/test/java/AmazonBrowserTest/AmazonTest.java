@@ -1,5 +1,7 @@
 package AmazonBrowserTest;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 
 
@@ -13,27 +15,29 @@ import org.testng.annotations.Test;
 
 public class AmazonTest {
 	WebDriver driver;
+	
 	 @Parameters({"bname"})
 	  @Test
-	  public void testParallel(String bname) throws MalformedURLException, InterruptedException
+	  public void testParallel(String bname) throws MalformedURLException, InterruptedException, URISyntaxException
 	  {
+		 URL url=new URI("http://localhost:4444").toURL();
 		  if(bname.equals("chrome"))
 		  {
 			  ChromeOptions cap=new ChromeOptions();
-			  
-			  driver=new RemoteWebDriver(new URL("http://localhost:4444"),cap);
+			 
+			  driver=new RemoteWebDriver(url,cap);
 			  
 		  }else if(bname.equals("firefox"))
 		  {
 			  FirefoxOptions cap=new FirefoxOptions();
 			  
-			  driver=new RemoteWebDriver(new URL("http://localhost:4444"),cap);
+			  driver=new RemoteWebDriver(url,cap);
 			  
 		  }else if(bname.equals("edge"))
 		  {
 			  EdgeOptions cap=new EdgeOptions();
 			  
-			  driver=new RemoteWebDriver(new URL("http://localhost:4444"),cap);
+			  driver=new RemoteWebDriver(url,cap);
 		  }
 		  Thread.sleep(5000);
 		  driver.get("https://www.amazon.com/");

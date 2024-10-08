@@ -10,14 +10,26 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AmazonTest {
 	WebDriver driver;
 	
-	 @Parameters({"bname"})
-	  @Test
+	@DataProvider(name = "browsers")
+	public Object[][] browserProvider() {
+		return new Object[][] {
+			{"chrome"},
+			{"firefox"},
+			{"edge"}
+		};
+	}
+
+	@Test(dataProvider = "browsers")
+	
+	// @Parameters({"bname"})
+	  
 	  public void testParallel(String bname) throws MalformedURLException, InterruptedException, URISyntaxException
 	  {
 		 URL url=new URI("http://localhost:4444").toURL();

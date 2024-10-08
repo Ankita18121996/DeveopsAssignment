@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-08T11:45:32 IST" name="Suite" finished-at="2024-10-08T11:47:09 IST" duration-ms="97247">
+  <suite started-at="2024-10-08T12:30:51 IST" name="Suite" finished-at="2024-10-08T12:32:00 IST" duration-ms="68490">
     <groups>
     </groups>
-    <test started-at="2024-10-08T11:45:32 IST" name="ChromeTest" finished-at="2024-10-08T11:46:52 IST" duration-ms="79597">
+    <test started-at="2024-10-08T12:30:51 IST" name="ChromeTest" finished-at="2024-10-08T12:31:39 IST" duration-ms="47852">
       <class name="AmazonBrowserTest.AmazonTest">
-        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@1a482e36]" started-at="2024-10-08T11:45:32 IST" name="testParallel" finished-at="2024-10-08T11:46:52 IST" duration-ms="79432" status="PASS">
+        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@1a482e36]" started-at="2024-10-08T12:30:51 IST" name="testParallel" finished-at="2024-10-08T12:31:39 IST" duration-ms="47712" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,9 +20,9 @@
         </test-method> <!-- testParallel -->
       </class> <!-- AmazonBrowserTest.AmazonTest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2024-10-08T11:45:32 IST" name="EdgeTest" finished-at="2024-10-08T11:46:58 IST" duration-ms="85831">
+    <test started-at="2024-10-08T12:30:51 IST" name="EdgeTest" finished-at="2024-10-08T12:31:47 IST" duration-ms="56267">
       <class name="AmazonBrowserTest.AmazonTest">
-        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@4c402120]" started-at="2024-10-08T11:45:32 IST" name="testParallel" finished-at="2024-10-08T11:46:58 IST" duration-ms="85690" status="PASS">
+        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@4c402120]" started-at="2024-10-08T12:30:51 IST" name="testParallel" finished-at="2024-10-08T12:31:47 IST" duration-ms="56130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,9 +35,9 @@
         </test-method> <!-- testParallel -->
       </class> <!-- AmazonBrowserTest.AmazonTest -->
     </test> <!-- EdgeTest -->
-    <test started-at="2024-10-08T11:45:32 IST" name="firefox" finished-at="2024-10-08T11:47:09 IST" duration-ms="97247">
+    <test started-at="2024-10-08T12:30:51 IST" name="firefox" finished-at="2024-10-08T12:32:00 IST" duration-ms="68490">
       <class name="AmazonBrowserTest.AmazonTest">
-        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@22ff4249]" started-at="2024-10-08T11:45:32 IST" name="testParallel" finished-at="2024-10-08T11:47:09 IST" duration-ms="97094" status="PASS">
+        <test-method signature="testParallel(java.lang.String)[pri:0, instance:AmazonBrowserTest.AmazonTest@22ff4249]" started-at="2024-10-08T12:30:51 IST" name="testParallel" finished-at="2024-10-08T12:32:00 IST" duration-ms="68367" status="PASS">
           <params>
             <param index="0">
               <value>
